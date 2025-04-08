@@ -22,6 +22,14 @@ Built to demonstrate **solid architecture**, **modularity**, and **best coding h
 
 ---
 
+## ✍️ Author
+
+**Monti Sharma** – Passionate about clean code and .NET architecture  
+📫 [GitHub Profile](https://github.com/MontiSharma1999)  
+🔗 [LinkedIn](https://www.linkedin.com/in/montisharma/)
+
+---
+
 ## 📁 Project Structure
 
 ```bash
