@@ -31,3 +31,11 @@ SharpPrinciples/
 ├── bin/                     # Build output (ignored by git)
 ├── obj/                     # Intermediate build files (ignored by git)
 └── .gitignore
+
+---
+
+## ✍️ Author
+
+**Monti Sharma** – Passionate about clean code and .NET architecture  
+📫 [GitHub Profile](https://github.com/MontiSharma1999)  
+🔗 [LinkedIn](https://www.linkedin.com/in/montisharma/)
