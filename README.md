@@ -34,8 +34,13 @@ Built to demonstrate **solid architecture**, **modularity**, and **best coding h
 
 ```bash
 SharpPrinciples/
+├── Geometry/
+│   └── Circle.cs            # Circle-related geometric logic
+├── Shared/
+│   └── Printer.cs           # Shared printing utility
 ├── Program.cs               # Entry point
 ├── SharpPrinciples.csproj   # Project file
 ├── bin/                     # Build output (ignored by git)
 ├── obj/                     # Intermediate build files (ignored by git)
 └── .gitignore
+
