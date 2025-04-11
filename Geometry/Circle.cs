@@ -1,5 +1,5 @@
 ﻿namespace SharpPrinciples.Geometry;
-public class Circle(double radius)
+public class Circle(double radius) : IShape
 {
     public double Radius { get; set; } = radius;
 

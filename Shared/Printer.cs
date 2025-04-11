@@ -3,8 +3,8 @@
 namespace SharpPrinciples.Shared;
 public static class Printer
 {
-    public static void Print(Circle circle)
+    public static void Print(IShape shape)
     {
-        Console.WriteLine(circle);
+        Console.WriteLine(shape);
     }
 }

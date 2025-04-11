@@ -6,12 +6,14 @@ internal class Program
 {
     static void Main(string[] args)
     {
-        Circle circle = new Circle(5);
-        CalculateArea(circle);
-        Printer.Print(circle);
+        IShape circle = new Circle(5);
+        IShape rectangle = new Rectangle(6, 7);
+        CalculateArea(rectangle);
+        Printer.Print(rectangle);
     }
 
-    /*  this does illustrate a violation of the Single Responsibility Principle (SRP).
+    /*  1. Single Resposibility Principle
+        this does illustrate a violation of the Single Responsibility Principle (SRP).
         The Single Responsibility Principle (from SOLID principles) states that:
             A class should have only one reason to change.
             That is, each class should only do one thing.
@@ -37,9 +39,15 @@ internal class Program
     // should be file, text etc, and next step to achieve SRP is move calculate area logic into Circle class
     // How it looks see below and compare it to above
 
-    private static void CalculateArea(Circle circle)
+    private static void CalculateArea(IShape shape)
     {
-        double area = circle.GetArea();
+        double area = shape.GetArea();
         Console.WriteLine(area);
     }
+
+    /* 2. Open(extension) / Closed(modification) Principle
+        "Software entities (classes, modules, functions, etc.) should be open for extension, but closed for modification."
+        Open for extension: You should be able to add new functionality or behavior to a class.
+        Closed for modification: You shouldn't have to modify the existing code of a class to add new functionality.
+     */
 }
